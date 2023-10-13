@@ -1,0 +1,50 @@
+@media @desktop-up {
+  .sideNavContainer {
+    flex-direction: row-reverse;
+  }
+
+  .sideNav {
+    margin-right: 0px;
+    margin-left: 50px;
+
+    &.TagsPage-nav {
+      margin-left: 0;
+    }
+
+    .item-allDiscussions, 
+    .item-following, 
+    .item-tags,
+    .item-fof-user-directory,
+    .item-clarkwinkelmann-group-list-item,
+    .item-privateDiscussions,
+    .item-categories,
+    .item-blog,
+    .item-contactPage,
+    .item-Glossary {
+      display: none;
+    }
+
+    .Dropdown--select .Dropdown-menu  {
+      & > li.active > a {
+        font-weight: 600;
+      }
+
+      & > .Dropdown-separator {
+        display: none;
+      }
+    }  
+    
+    .User--directory &,
+    .GroupList-page & {
+      display: none;
+    }
+  }
+
+  .sideNav--hidden {
+    display: none;
+  }
+  
+  .sideNavOffset {
+    margin-left: 0px;
+  }
+}
